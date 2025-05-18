@@ -1,0 +1,76 @@
+.missing-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1c7c54, #1a5f7a);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.missing-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.missing-image i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+}
+
+.missing-image h3 {
+    margin: 10px 0;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.missing-image p {
+    font-size: 14px;
+    opacity: 0.9;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Animation for fallback icon */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Loading placeholder for images */
+.image-loading-placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loadingAnimation 1.5s infinite;
+    border-radius: 6px;
+    min-height: 100px;
+    width: 100%;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
