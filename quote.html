@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1c7c54">
-    <title>Request a Quote - TENTFLAIR SOLUTIONS</title><meta name="description" content="Request a custom quote for PVC tents, truck covers, tautliner curtains, tipper covers, chicken house curtains, and pool covers from TENTFLAIR SOLUTIONS.">
+    <title>Request a Quote - TENTFLAIR SOLUTIONS</title>
+    <meta name="description"
+        content="Request a custom quote for PVC tents, truck covers, tautliner curtains, tipper covers, chicken house curtains, and pool covers from TENTFLAIR SOLUTIONS.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fallback.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/preloader.css">
 </head>
+
 <body>
     <!-- Preloader -->
     <div class="preloader">
@@ -27,7 +35,8 @@
     </div>
 
     <!-- Header Section -->
-    <header>        <div class="container">
+    <header>
+        <div class="container">
             <div class="logo">
                 <img src="images/logo.jpg" alt="TENTFLAIR SOLUTIONS Logo">
                 <div class="logo-text">
@@ -67,9 +76,10 @@
         <div class="container">
             <div class="quote-intro">
                 <h2>Custom Quote Request</h2>
-                <p>Please fill out the form below with your specific requirements, and our team will prepare a detailed quote for your project. The more information you provide, the more accurate our quote will be.</p>
+                <p>Please fill out the form below with your specific requirements, and our team will prepare a detailed
+                    quote for your project. The more information you provide, the more accurate our quote will be.</p>
             </div>
-            
+
             <form id="quoteForm" class="quote-form" action="#" method="POST">
                 <div class="form-section">
                     <h3>Contact Information</h3>
@@ -83,7 +93,7 @@
                             <input type="text" id="companyName" name="companyName">
                         </div>
                     </div>
-                    
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email">Email Address <span class="required">*</span></label>
@@ -94,16 +104,16 @@
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="address">Address</label>
                         <textarea id="address" name="address" rows="3"></textarea>
                     </div>
                 </div>
-                
+
                 <div class="form-section">
                     <h3>Product Information</h3>
-                    
+
                     <div class="form-group">
                         <label for="productType">Product Type <span class="required">*</span></label>
                         <select id="productType" name="productType" required>
@@ -117,36 +127,38 @@
                             <option value="other">Other (Please specify)</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group" id="otherProductGroup" style="display:none;">
                         <label for="otherProduct">Please Specify Product</label>
                         <input type="text" id="otherProduct" name="otherProduct">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="quantity">Quantity <span class="required">*</span></label>
                         <input type="number" id="quantity" name="quantity" min="1" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="dimensions">Dimensions (if applicable)</label>
-                        <input type="text" id="dimensions" name="dimensions" placeholder="e.g., Length x Width x Height">
+                        <input type="text" id="dimensions" name="dimensions"
+                            placeholder="e.g., Length x Width x Height">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="color">Preferred Color(s)</label>
                         <input type="text" id="color" name="color">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="specifications">Additional Specifications</label>
-                        <textarea id="specifications" name="specifications" rows="4" placeholder="Please provide any specific requirements or features needed for your product"></textarea>
+                        <textarea id="specifications" name="specifications" rows="4"
+                            placeholder="Please provide any specific requirements or features needed for your product"></textarea>
                     </div>
                 </div>
-                
+
                 <div class="form-section">
                     <h3>Project Details</h3>
-                    
+
                     <div class="form-group">
                         <label for="timeframe">Timeframe <span class="required">*</span></label>
                         <select id="timeframe" name="timeframe" required>
@@ -156,7 +168,7 @@
                             <option value="flexible">Flexible (1 month or more)</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="budget">Budget Range</label>
                         <select id="budget" name="budget">
@@ -168,7 +180,7 @@
                             <option value="above-50000">Above R50,000</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="installation">Do you require installation services?</label>
                         <div class="radio-group">
@@ -176,21 +188,24 @@
                             <label><input type="radio" name="installation" value="no" checked> No</label>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="additionalInfo">Additional Information</label>
-                        <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any other information that might help us provide an accurate quote"></textarea>
+                        <textarea id="additionalInfo" name="additionalInfo" rows="4"
+                            placeholder="Any other information that might help us provide an accurate quote"></textarea>
                     </div>
                 </div>
-                
+
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary">Submit Quote Request</button>
                     <button type="reset" class="btn btn-secondary">Reset Form</button>
                 </div>
             </form>
-            
+
             <div class="quote-disclaimer">
-                <p><strong>Note:</strong> Submitting this form does not obligate you to make a purchase. Our team will review your requirements and provide a detailed quote within 1-2 business days. For urgent inquiries, please call us directly at <a href="tel:+27123456789">+27 12 345 6789</a>.</p>
+                <p><strong>Note:</strong> Submitting this form does not obligate you to make a purchase. Our team will
+                    review your requirements and provide a detailed quote within 1-2 business days. For urgent
+                    inquiries, please call us directly at <a href="tel:+27123456789">+27 12 345 6789</a>.</p>
             </div>
         </div>
     </section>
@@ -199,16 +214,17 @@
     <section class="quote-process">
         <div class="container">
             <h2 class="section-title">Our Quote Process</h2>
-            
+
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Submit Request</h3>
-                        <p>Fill out our detailed quote request form with your project specifications and requirements.</p>
+                        <p>Fill out our detailed quote request form with your project specifications and requirements.
+                        </p>
                     </div>
                 </div>
-                
+
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="step-content">
@@ -216,7 +232,7 @@
                         <p>Our team reviews your request and may contact you for additional information if needed.</p>
                     </div>
                 </div>
-                
+
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-content">
@@ -224,7 +240,7 @@
                         <p>We prepare a detailed quote based on your specifications, including pricing and timeline.</p>
                     </div>
                 </div>
-                
+
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <div class="step-content">
@@ -232,7 +248,7 @@
                         <p>You receive your personalized quote via email within 1-2 business days.</p>
                     </div>
                 </div>
-                
+
                 <div class="process-step">
                     <div class="step-number">5</div>
                     <div class="step-content">
@@ -248,11 +264,12 @@
     <section class="testimonials mini-testimonials">
         <div class="container">
             <h2 class="section-title">What Our Clients Say</h2>
-            
+
             <div class="testimonial-slider" id="testimonial-slider-mini">
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"The quote process was smooth and efficient. TENTFLAIR provided a detailed breakdown of costs with no hidden fees, and delivered exactly what was promised."</p>
+                        <p>"The quote process was smooth and efficient. TENTFLAIR provided a detailed breakdown of costs
+                            with no hidden fees, and delivered exactly what was promised."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
@@ -264,10 +281,12 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-slide">
                     <div class="testimonial-content">
-                        <p>"From quote to installation, the entire process was professional and seamless. The team understood our unique requirements and delivered a custom solution that exceeded our expectations."</p>
+                        <p>"From quote to installation, the entire process was professional and seamless. The team
+                            understood our unique requirements and delivered a custom solution that exceeded our
+                            expectations."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
@@ -297,14 +316,17 @@
             <div class="footer-grid">
                 <div class="footer-info">
                     <h3>TENTFLAIR SOLUTIONS</h3>
-                    <p>Specialists in top-quality heavy-duty PVC tents, truck covers, tautliner curtains, tipper covers, chicken house curtains, and pool covers.</p>
+                    <p>Specialists in top-quality heavy-duty PVC tents, truck covers, tautliner curtains, tipper covers,
+                        chicken house curtains, and pool covers.</p>
                 </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <address>
-                        <p><i class="fas fa-map-marker-alt"></i> 118 Blyde Avenue, Leachville, Brakpan</p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:+27123456789">+27 12 345 6789</a></p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@tentflair.co.za">info@tentflair.co.za</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i>46 b princess</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+27123456789">MALORY KENT-0626601340</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+27123456789">PETER TEMBO-0676926100</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                        href="mailto:info@tentflair.co.za">info@tentflairsolutions.co.za</a></p>
                     </address>
                 </div>
                 <div class="footer-links">
@@ -326,7 +348,8 @@
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -339,9 +362,11 @@
                 <p>&copy; 2025 TENTFLAIR SOLUTIONS. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>    <script src="js/script.js"></script>
+    </footer>
+    <script src="js/script.js"></script>
     <script src="js/image-fallback.js"></script>
     <script src="js/back-to-top.js"></script>
     <script src="js/preloader.js"></script>
 </body>
+
 </html>
