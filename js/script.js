@@ -113,63 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form Validation for Quote Form
-    const quoteForm = document.getElementById('quoteForm');
-    if (quoteForm) {
-        const productTypeSelect = document.getElementById('productType');
-        const otherProductGroup = document.getElementById('otherProductGroup');
-        
-        if (productTypeSelect && otherProductGroup) {
-            productTypeSelect.addEventListener('change', function() {
-                if (this.value === 'other') {
-                    otherProductGroup.style.display = 'block';
-                    document.getElementById('otherProduct').setAttribute('required', '');
-                } else {
-                    otherProductGroup.style.display = 'none';
-                    document.getElementById('otherProduct').removeAttribute('required');
-                }
-            });
-        }
-        
-        quoteForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simple validation
-            let isValid = true;
-            const requiredFields = quoteForm.querySelectorAll('[required]');
-            
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.classList.add('error');
-                } else {
-                    field.classList.remove('error');
-                }
-            });
-            
-            // Email validation
-            const emailField = quoteForm.querySelector('#email');
-            if (emailField && emailField.value) {
-                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailPattern.test(emailField.value)) {
-                    isValid = false;
-                    emailField.classList.add('error');
-                }
-            }
-            
-            if (isValid) {
-                // For demonstration purposes, showing a success message
-                showFormMessage(quoteForm, 'Your quote request has been submitted successfully! We will get back to you within 1-2 business days.', 'success');
-                quoteForm.reset();
-                if (otherProductGroup) {
-                    otherProductGroup.style.display = 'none';
-                }
-            } else {
-                showFormMessage(quoteForm, 'Please fill in all required fields correctly.', 'error');
-            }
-        });
-    }
-
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

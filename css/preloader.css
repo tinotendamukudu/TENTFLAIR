@@ -48,8 +48,10 @@ body.loaded {
 }
 
 .preloader-logo img {
-    max-height: 70px;
-    width: auto;
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    object-fit: contain;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

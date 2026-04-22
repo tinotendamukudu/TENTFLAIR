@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
     
     images.forEach(img => {
-        // Skip preloader logo to avoid flickering
-        if (img.closest('.preloader-logo')) return;
+        // Skip shared brand logos so the header/preloader keep their fixed reserved size.
+        if (img.closest('.preloader-logo, .logo')) return;
         
         // Add loading placeholder before image loads
         if (!img.complete && !img.closest('.preloader')) {
